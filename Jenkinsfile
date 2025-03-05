@@ -7,7 +7,10 @@ pipeline {
 
     stages{
         stage("stage-1"){
-            sh 'npx run cypress'
+            steps{
+                sh 'npx run cypress'
+            }
+            
         }
     }
     post{
